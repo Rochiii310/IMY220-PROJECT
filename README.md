@@ -12,7 +12,15 @@ Ezpost lets users share photos, create playlists, and connect with others throug
 - Database: MongoDB
 
 ## Team
-- Your Name - Student Number
+- Rochaan Verster u25045785
 
 ## Status
-🚧 In development — Deliverable 0
+
+## Features
+- User profiles
+- Photo posts with likes and comments
+- Playlists and tagging
+- Splash, home, profile, and post pages
+
+## Getting Started
+Instructions coming soon as the project develops.
