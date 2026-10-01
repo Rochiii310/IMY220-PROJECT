@@ -1,0 +1,171 @@
+.image-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+}
+
+.post {
+  padding: 1.5rem 0;
+}
+
+.post-head, .post-preview-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+
+.post-author, .post-preview-author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-ink);
+  font-weight: 500;
+}
+
+.post-author img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-time, .post-preview-time {
+  font-size: 0.8rem;
+  color: #71776f;
+}
+
+.post-description {
+  margin: 0.8rem 0 0.5rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.8rem;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.comments h3 {
+  margin-bottom: 0.8rem;
+}
+
+.comment {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.comment img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-author {
+  margin: 0;
+  font-weight: 500;
+}
+
+.comment-text {
+  margin: 0.15rem 0;
+}
+
+.comment-time {
+  font-size: 0.75rem;
+  color: #71776f;
+}
+
+.profile {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-username {
+  color: #71776f;
+  margin: 0 0 0.5rem;
+}
+
+.profile-bio {
+  margin: 0 0 0.8rem;
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 0.4rem;
+  background: var(--color-moss);
+  color: var(--color-white);
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+.profile-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0;
+  color: var(--color-ink);
+}
+
+.profile-preview img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-preview-name {
+  margin: 0;
+  font-weight: 500;
+}
+
+.profile-preview-username {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #71776f;
+}
+
+.friend-list h3 {
+  margin-bottom: 0.5rem;
+}
+
+.create-post, .edit-post, .edit-profile {
+  background: var(--color-white);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.edit-post-actions, .edit-profile-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.feed-toggle {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}

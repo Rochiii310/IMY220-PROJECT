@@ -1,0 +1,39 @@
+.splash {
+  align-items: center;
+}
+
+.splash-hero {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  width: 100%;
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+}
+
+.splash-hero h1 {
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.splash-hero p {
+  margin: 0;
+  color: var(--color-line);
+}
+
+.splash-forms {
+  max-width: 420px;
+}
+
+.auth-form h2 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .splash-hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .splash-hero h1 {
+    font-size: 2.2rem;
+  }
+}

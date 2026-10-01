@@ -1,0 +1,18 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Splash from './pages/Splash.jsx'
+import Home from './pages/Home.jsx'
+import ProfilePage from './pages/ProfilePage.jsx'
+import PostPage from './pages/PostPage.jsx'
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Splash />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/profile/:id" element={<ProfilePage />} />
+        <Route path="/post/:id" element={<PostPage />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
