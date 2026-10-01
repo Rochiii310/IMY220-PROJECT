@@ -1,16 +1,30 @@
-version: "3.8"
-
 services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
   backend:
     build: ./backend
     ports:
       - "3001:3001"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+      - DB_NAME=shutter
+      - JWT_SECRET=shutter-secret-change-me
+    depends_on:
+      - mongo
 
   frontend:
     build: ./frontend
     ports:
       - "5173:5173"
     environment:
-      - VITE_API_URL=http://localhost:3001
+      - API_PROXY=http://backend:3001
     depends_on:
       - backend
+
+volumes:
+  mongo-data:
